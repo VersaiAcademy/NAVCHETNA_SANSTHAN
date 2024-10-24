@@ -758,7 +758,7 @@ Uri: https://pixydrops.com/eduhive-html/assets/images/Navchetna_logo.svg
 File Name: C:\Users\Admin\OneDrive\Desktop\Academy Versai\pixydrops.com\eduhive-html\assets\images\logo-dark.png
 Content Type: image/png
 
-Uri: https://pixydrops.com/eduhive-html/assets/images/mobile_logo.png
+Uri: https://pixydrops.com/eduhive-html/assets/images/Navchetna_logo.svg
 File Name: C:\Users\Admin\OneDrive\Desktop\Academy Versai\pixydrops.com\eduhive-html\assets\images\logo-light.png
 Content Type: image/png
 
