@@ -750,11 +750,11 @@ Uri: https://pixydrops.com/eduhive-html/assets/images/landing/home-rtl.jpg
 File Name: C:\Users\Admin\OneDrive\Desktop\Academy Versai\pixydrops.com\eduhive-html\assets\images\landing\home-rtl.jpg
 Content Type: image/jpeg
 
-Uri: https://pixydrops.com/eduhive-html/assets/images/VERSAI-logo-lodear.png
+Uri: https://pixydrops.com/eduhive-html//assets/images/Navchetna_logo.svg
 File Name: C:\Users\Admin\OneDrive\Desktop\Academy Versai\pixydrops.com\eduhive-html\assets\images\loader.png
 Content Type: image/png
 
-Uri: https://pixydrops.com/eduhive-html/assets/images/logo_versai.png
+Uri: https://pixydrops.com/eduhive-html/assets/images/Navchetna_logo.svg
 File Name: C:\Users\Admin\OneDrive\Desktop\Academy Versai\pixydrops.com\eduhive-html\assets\images\logo-dark.png
 Content Type: image/png
 
