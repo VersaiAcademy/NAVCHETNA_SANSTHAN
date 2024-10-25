@@ -316,9 +316,21 @@
   padding-right: 30px;
 }
 
+
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+.course-category__card:focus,
+.course-category__card:active {
+    /* Reset any styles that change on click */
+    outline: none;
+    box-shadow: none;
+    background-color: inherit; /* Keep the original background */
+    color: inherit; /* Prevent text color change */
+}
+
+
+
 body {
   font-family: var(--eduhive-font, "Plus Jakarta Sans", sans-serif);
   color: var(--eduhive-text, #7B7980);
@@ -15223,7 +15235,7 @@ li:hover .sidebar__comments__icon {
   padding: 9px;
   border-radius: 8px;
   background-color: var(--eduhive-white, #FFFFFF);
-  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.1);*/
 }
 .faq-one__image__one__inner img {
   max-width: 100%;
