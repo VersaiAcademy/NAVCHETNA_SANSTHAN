@@ -11566,7 +11566,7 @@ li:hover .contact-page__info__icon__inner {
   position: relative;
   padding: var(--section-space, 120px) 0;
   background: radial-gradient(circle, #662d91, #92278f);
-
+margin-bottom: 3vh;
   overflow: hidden;
 }
 .cta-one .container {
