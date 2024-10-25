@@ -6702,13 +6702,13 @@ li:hover .contact-page__info__icon__inner {
 }
 .main-slider-one__item {
   position: relative;
-  padding-top: 302px;
+  padding-top: 250px;
   padding-bottom: 185px;
   background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
 }
 @media (max-width: 1199px) {
   .main-slider-one__item {
-    padding-top: 250px;
+    padding-top: 190px;
   }
 }
 @media (max-width: 991px) {
