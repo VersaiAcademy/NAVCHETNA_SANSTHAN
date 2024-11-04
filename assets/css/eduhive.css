@@ -5308,7 +5308,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .page-header {
   position: relative;
   padding-top: var(--section-space, 120px);
-  padding-bottom: 110px;
+  padding-bottom: 70px;
   background-color: var(--eduhive-white2, #EDEAF4);
   overflow: hidden;
 }
