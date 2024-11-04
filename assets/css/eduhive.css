@@ -12387,6 +12387,7 @@ margin-bottom: 3vh;
   position: relative;
   overflow: hidden;
   border-radius: 30px;
+  margin: 5px;
 }
 .gallery-page__card img {
   transform: scale(1);
