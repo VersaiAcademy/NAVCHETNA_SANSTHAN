@@ -99,7 +99,7 @@
                             <nav class="main-header__nav main-menu">
                                 <ul class="main-menu__list">
                                     <li>
-                                        <a href="index.html">होम</a>
+                                        <a href="index.html">मुखपृष्ठ</a>
                                     </li>
             
                                     <li>
@@ -409,6 +409,7 @@
     </section><!-- /.course-category section-space -->
         
 
+
         <section class="faq-one section-space">
             <div class="container">
                 <div class="row gutter-y-50">
@@ -496,15 +497,16 @@
         <section class="cta-one">
             <div class="container">
                 <div class="cta-one__content wow fadeInUp" data-wow-duration="1500ms">
-                    <h2 class="cta-one__title">Your  Skills Certificate <br>
-                        Looks like this </h2><!-- /.cta-one__title -->
-                    <a href="assets/images/_Certificate.png" class="eduhive-btn">
-                        <span>Click Now</span>
+                    <h2 class="cta-one__title">नवचेतना: मुफ्त छात्रवृत्ति के साथ,<br>
+                        उज्जवल भविष्य की ओर!</h2><!-- /.cta-one__title -->
+                    <a href="assets/files/ScholarshipForm.pdf" download="Navchetna_Scholarship_Form" class="eduhive-btn">
+                        <span>छात्रवृत्ति के लिए आवेदन करें</span>
                         <span class="eduhive-btn__icon">
                             <span class="eduhive-btn__icon__inner"><i class="icon-right-arrow"></i></span>
                         </span>
                     </a><!-- /.eduhive-btn -->
-                </div><!-- /.cta-one__conten -->
+                </div><!-- /.cta-one__content -->
+                
             </div><!-- /.container -->
             <img src="assets/images/resources/birds.png" alt="shape" class="cta-one__image-one">
             <img src="assets/images/resources/cta-1-2.png" alt="shape" class="cta-one__image-two">
@@ -528,7 +530,7 @@
                             <form action="#" data-url="MAILCHIMP_FORM_URL" class="main-footer__newsletter__form mc-form">
                                 <input type="text" name="EMAIL" placeholder="Enter Your Email">
                                 <button type="submit" class="eduhive-btn">
-                                    <span>Get Newsletter</span>
+                                    <span>हमसे जुड़ें</span>
                                 </button>
                             </form><!-- /.main-footer__newsletter__form mc-form -->
                             <div class="mc-form__response"></div><!-- /.mc-form__response -->
@@ -573,7 +575,7 @@ Rajasthan</a>
                                         <span class="footer-widget__links__icon">
                                             <i class="icon-double-arrow"></i>
                                         </span>
-                                        होम
+                                        मुखपृष्ठ
                                     </a>
                                 </li>
                                 <li>
@@ -609,15 +611,15 @@ Rajasthan</a>
                             <h2 class="footer-widget__title">Our Gallery</h2><!-- /.footer-widget__title -->
                             <div class="footer-widget__gallery">
                                 <a href="#" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/footer-widget-gallery-1.jpg" alt="footer-widget-gallery">
+                                    <img src="assets/images/motivational/m2.JPG" alt="footer-widget-gallery">
                                     <span class="footer-widget__gallery__icon icon-plus"></span>
                                 </a>
                                 <a href="#" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/footer-widget-gallery-2.jpg" alt="footer-widget-gallery">
+                                    <img src="assets/images/plantation/p3.JPG" alt="footer-widget-gallery">
                                     <span class="footer-widget__gallery__icon icon-plus"></span>
                                 </a>
                                 <a href="#" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/footer-widget-gallery-3.jpg" alt="footer-widget-gallery">
+                                    <img src="assets/images/education/e3.jpg" alt="footer-widget-gallery">
                                     <span class="footer-widget__gallery__icon icon-plus"></span>
                                 </a>
                             </div><!-- /.footer-widget__gallery -->
@@ -719,6 +721,31 @@ Rajasthan</a>
     <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
     <!-- template js -->
     <script src="assets/js/eduhive.js"></script>
+    <script>
+        document.querySelectorAll(".accordion-title").forEach(title => {
+    title.addEventListener("click", () => {
+        // Toggle active class on the clicked title
+        title.classList.toggle("active");
+        
+        // Find the associated accordion content
+        const content = title.nextElementSibling;
+        
+        // Toggle the display of the content
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            // Close other open accordions (optional)
+            document.querySelectorAll(".accordion-content").forEach(otherContent => {
+                otherContent.style.maxHeight = null;
+                otherContent.previousElementSibling.classList.remove("active");
+            });
+            // Open the clicked accordion
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+});
+
+    </script>
 </body>
 
 </html>
