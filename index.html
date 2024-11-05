@@ -679,6 +679,31 @@ Rajasthan</a>
     <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
     <!-- template js -->
     <script src="assets/js/eduhive.js"></script>
+    <script>
+        document.querySelectorAll(".accordion-title").forEach(title => {
+    title.addEventListener("click", () => {
+        // Toggle active class on the clicked title
+        title.classList.toggle("active");
+        
+        // Find the associated accordion content
+        const content = title.nextElementSibling;
+        
+        // Toggle the display of the content
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            // Close other open accordions (optional)
+            document.querySelectorAll(".accordion-content").forEach(otherContent => {
+                otherContent.style.maxHeight = null;
+                otherContent.previousElementSibling.classList.remove("active");
+            });
+            // Open the clicked accordion
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+});
+
+    </script>
 </body>
 
 </html>

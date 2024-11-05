@@ -5957,6 +5957,15 @@ body.megamenu-popup-active .mobile-nav__content {
   display: block;
   border-radius: 10px;
 }
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease;
+}
+.accordion-title.active .accordion-title__icon {
+  transform: rotate(180deg);
+}
+
 .footer-widget__gallery__icon {
   display: flex;
   justify-content: center;
