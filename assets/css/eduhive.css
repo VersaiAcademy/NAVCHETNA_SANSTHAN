@@ -109,7 +109,7 @@
   --eduhive-border-color-rgb: 219, 216, 230;
   --eduhive-letter-space: -0.03em;
   --eduhive-letter-space-xl: 0.2em;
-  --section-space: 190px;
+  --section-space: 0px;
   --section-space2: 116px;
 }
 
@@ -119,7 +119,7 @@
   background-color: orange;
   padding: 10px;
   border-radius: 5px;
-  margin: 38vh auto auto auto;
+  margin: auto;
   max-width: 95%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -183,6 +183,45 @@
       font-size: 0.85em;
   }
 }
+.button-grid-container {
+  display: grid;
+  gap: 15px;
+  padding: 10px;
+  
+  /* Desktop: 2 columns with 4 buttons each */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+}
+
+.grid-button {
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FF7F50; /* Coral color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .button-grid-container {
+      grid-template-columns: 1fr; /* 1 column on smaller screens */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Utility
@@ -472,19 +511,16 @@ h6 {
 }
 
 .section-space {
-  padding-top: var(--section-space, 220px);
-  padding-bottom: var(--section-space, 80px);
+  margin-top: 83vh;
 }
 @media (max-width: 767px) {
   .section-space {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    margin-top: 79vh;
   }
 }
 @media (max-width: 575px) {
   .section-space {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin-top: 69vh;
   }
 }
 
@@ -6838,7 +6874,7 @@ li:hover .contact-page__info__icon__inner {
 }
 .main-slider-one__item {
   position: relative;
-  padding-top: 250px;
+  padding-top: 50px;
   padding-bottom: 185px;
   background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
 }
@@ -12534,7 +12570,7 @@ margin-bottom: 3vh;
   height: 100%;
   object-fit: cover; /* Ensures image fits within the rectangle without stretching */
   border-radius: 20px;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 1s ease, opacity 0.5s ease;
 }
 
 .gallery-page__card__hover {
