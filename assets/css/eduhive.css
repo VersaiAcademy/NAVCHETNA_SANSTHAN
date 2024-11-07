@@ -16558,3 +16558,129 @@ h2 {
   margin-bottom: 10px; /* Adds space below the h2 */
 }
 
+
+
+/* General header styling */
+.main-header {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-bottom: 2px solid black;
+}
+
+.main-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.main-header__logo {
+  flex: 1;
+}
+
+.main-header__details {
+  text-align: right;
+  flex: 2;
+}
+
+.main-header__details h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.main-header__details p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.main-header__nav {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+}
+
+/* Navigation menu styling */
+.main-menu__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.main-menu__list li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.main-menu__list li a:hover {
+  color: #007bff;
+}
+
+/* Responsive styling for mobile view */
+@media (max-width: 768px) {
+  .main-header__inner {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center align items */
+  }
+
+  .main-header__details {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .main-header__details h1 {
+      font-size: 20px;
+  }
+
+  .main-header__details p {
+      font-size: 12px;
+  }
+
+  .main-menu__list {
+      flex-direction: column; /* Stack menu items vertically */
+      font-size: 14px;
+  }
+
+  .main-menu__list li {
+      margin: 5px 0;
+  }
+}
+/* Responsive styling for small screens (320px to 768px) */
+@media (max-width: 768px) {
+  .main-header__inner {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .main-header__details {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .main-header__details h1 {
+      font-size: 18px; /* Further reduce font size */
+  }
+
+  .main-header__details p {
+      font-size: 12px;
+  }
+
+  .main-menu__list {
+      flex-direction: column;
+      font-size: 14px;
+      padding: 5px 0; /* Adjust padding */
+  }
+
+  .main-menu__list li {
+      margin: 5px 0;
+  }
+  
+ 
+}
+
+
