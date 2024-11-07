@@ -953,7 +953,7 @@ setInterval(updateDateTime, 1000);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
     
-    const date = now.toLocaleDateString('en-IN', options); // Format for India
+    const date = now.toLocaleDateString('en-IN', options); 
     const time = now.toLocaleTimeString('en-IN', timeOptions);
     
     datetimeElement.textContent = `${date} | ${time}`;
