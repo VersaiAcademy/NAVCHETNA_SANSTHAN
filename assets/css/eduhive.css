@@ -3897,16 +3897,19 @@ a:hover .instructor-card-two__social__icon {
 .topbar {
   display: none;
   background: radial-gradient(circle, #662d91, #92278f);
-
+  color: white;
 }
+
 @media (min-width: 768px) {
   .topbar {
-    display: block;
+      display: block;
   }
 }
+
 .topbar .container-fluid {
   max-width: 1450px;
 }
+
 .topbar__inner {
   display: flex;
   align-items: center;
@@ -3914,17 +3917,67 @@ a:hover .instructor-card-two__social__icon {
   padding-top: 17px;
   padding-bottom: 17px;
 }
+
+/* Center alignment on smaller screens */
 @media (max-width: 991px) {
   .topbar__inner {
-    justify-content: center;
+      justify-content: center;
   }
 }
-.topbar__info {
-  margin: 0;
+
+/* Topbar content styling */
+.topbar__content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 }
+
+.topbar__organization {
+  font-weight: bold;
+}
+
+.divider {
+  color: white;
+}
+
+/* Topbar right-aligned section */
+.topbar__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 3px;
+}
+
+.topbar__header {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.topbar__subheader {
+  font-size: 12px;
+  color: #CCCCCC;
+}
+
+.topbar__boldsubheader {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .topbar__inner {
+      flex-direction: column;
+      align-items: center;
+  }
+  .topbar__right {
+      align-items: center;
+      text-align: center;
+  }
+}
+
 @media (max-width: 991px) {
   .topbar__info {
     justify-content: center;
@@ -3990,7 +4043,10 @@ a:hover .instructor-card-two__social__icon {
 .home-main-header .main-header {
   background-color: transparent;
 }
+/* MYCSSSSSSSS */
+/* Right-aligned header section */
 
+/*  */
 .main-header {
   position: relative;
   background-color: var(--eduhive-white, #FFFFFF);

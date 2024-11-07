@@ -12,6 +12,14 @@
     }
   });
 
+
+
+// Initial call
+updateDateTime();
+// Update every second
+setInterval(updateDateTime, 1000);
+
+
   /*-- Checkout Accoradin --*/
   if ($(".checkout-page__payment__title").length) {
     $(".checkout-page__payment__item")
@@ -936,3 +944,17 @@
     eduhive_stretch();
   });
 })(jQuery);
+
+
+  // DATE TIME
+  function updateDateTime() {
+    const datetimeElement = document.getElementById("topbarDatetime");
+    const now = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    
+    const date = now.toLocaleDateString('en-IN', options); // Format for India
+    const time = now.toLocaleTimeString('en-IN', timeOptions);
+    
+    datetimeElement.textContent = `${date} | ${time}`;
+}
