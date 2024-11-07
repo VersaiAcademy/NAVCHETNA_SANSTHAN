@@ -109,8 +109,45 @@
   --eduhive-border-color-rgb: 219, 216, 230;
   --eduhive-letter-space: -0.03em;
   --eduhive-letter-space-xl: 0.2em;
-  --section-space: 220px;
+  --section-space: 190px;
   --section-space2: 116px;
+}
+
+/* MYCSS */
+/* carousel */
+.news-carousel-container {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 180px auto auto auto;
+  max-width: 95%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 20px; /* Space between the title and scrolling content */
+}
+
+.marquee-container {
+  flex-grow: 1; /* Allows the content to take up the remaining space */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.news-marquee {
+  font-size: 1.1rem;
+  color: white;
+  display: inline-block;
+  padding: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -401,13 +438,13 @@ h6 {
 }
 
 .section-space {
-  padding-top: var(--section-space, 120px);
-  padding-bottom: var(--section-space, 120px);
+  padding-top: var(--section-space, 220px);
+  padding-bottom: var(--section-space, 80px);
 }
 @media (max-width: 767px) {
   .section-space {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 575px) {
@@ -12422,9 +12459,10 @@ margin-bottom: 3vh;
 --------------------------------------------------------------*/
 .gallery-page {
   background-color: var(--eduhive-white, #FFFFFF);
+  margin-top: 20px;
 }
 .gallery-page .row {
-  --bs-gutter-x: 30px;
+  --bs-gutter-x: 60px;
   --bs-gutter-y: 30px;
 }
 .gallery-page__filter__list {
@@ -12451,31 +12489,34 @@ margin-bottom: 3vh;
 .gallery-page__card {
   position: relative;
   overflow: hidden;
-  border-radius: 30px;
-  margin: 5px;
+  border-radius: 20px; /* Adjust border radius if needed for a rectangular shape */
+  margin: 10px; /* Adds spacing between items */
+  width: 100%; /* Ensures the card takes full width within the carousel */
+  aspect-ratio: 16 / 9; /* Creates a rectangular aspect ratio */
 }
+
 .gallery-page__card img {
-  transform: scale(1);
   width: 100%;
-  display: block;
-  opacity: 1;
-  border-radius: 30px;
-  transition: transform 500ms ease, opacity 500ms ease;
+  height: 100%;
+  object-fit: cover; /* Ensures image fits within the rectangle without stretching */
+  border-radius: 20px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
+
 .gallery-page__card__hover {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(var(--eduhive-black-rgb, 32, 16, 75), 0.7);
+  background-color: rgba(32, 16, 75, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   transform: scale(1, 0);
-  transition: transform 500ms ease;
+  transition: transform 0.5s ease;
   transform-origin: bottom center;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .gallery-page__card__hover .img-popup {
   position: relative;
