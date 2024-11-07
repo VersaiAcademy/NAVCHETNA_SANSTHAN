@@ -192,6 +192,18 @@
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
 }
 
+.download-link {
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensures proper alignment */
+}
+
+.download-link .grid-button {
+  /* Ensure any additional styling applies as needed */
+  width: 100%; /* If you need full-width buttons, adjust as needed */
+  font-weight: bold; /* Make text bold */
+  /* Apply other styles specific to your button here */
+}
+
 .grid-button {
   font-weight: bold;
   padding: 15px 20px;
