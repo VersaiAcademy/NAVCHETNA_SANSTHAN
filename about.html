@@ -59,42 +59,7 @@
               </div>
             </div>
     
-            <header class="main-header">
-              <div class="container-fluid">
-                <div class="main-header__inner">
-                  <!-- Logo Section -->
-                  <div class="main-header__logo logo-retina">
-                    <a href="index.html">
-                      <img
-                        src="assets/images/Navchetna_logo.svg"
-                        alt="नवचेतना संस्थान"
-                        width="50%"
-                      />
-                    </a>
-                  </div>
-    
-                  <!-- Organization Details -->
-                  <div class="main-header__details">
-                    <h1>नवचेतना संस्थान</h1>
-                    <p>पंजीकरण संख्या – 615/जयपुर/15-16</p>
-                    <p>सी –231, नारायण विहार, जयपुर – 302020</p>
-                  </div>
-                </div>
-    
-                <!-- Navigation Menu -->
-                <nav class="main-header__nav">
-                  <ul class="main-menu__list">
-                    <li><a href="index.html">मुख पृष्ठ</a></li>
-                    <li><a href="about.html">उद्देश्य</a></li>
-                    <li><a href="education.html">शिक्षा</a></li>
-                    <li><a href="art.html">कला</a></li>
-                    <li><a href="skill.html">कौशल</a></li>
-                    <li><a href="environment.html">पर्यावरण</a></li>
-                    <li><a href="activities.html">अन्य गतिविधियां</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </header>
+           <div id="headerr"></div>
           </div>
         
         <section class="about-two section-space">
@@ -244,6 +209,12 @@ navchetnasansthan@gmail.com</a>
                 document.getElementById("footer-placeholder").innerHTML = data;
             })
             .catch(error => console.error("Error loading footer:", error));
+            fetch("/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("headerr").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
     </script>
 </body>
 
