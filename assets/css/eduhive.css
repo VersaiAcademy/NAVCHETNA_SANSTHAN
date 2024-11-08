@@ -114,6 +114,7 @@
 }
 
 /* MYCSS */
+
 /* carousel */
 .news-carousel-container {
   background-color: orange;
@@ -5894,6 +5895,9 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .main-footer__copyright {
   margin: 0;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 .main-footer__shape-one {
   max-width: 100%;
