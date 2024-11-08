@@ -528,12 +528,22 @@ h6 {
 }
 @media (max-width: 767px) {
   .section-space {
-    margin-top: 79vh;
+    margin-top: 45vh;
   }
 }
 @media (max-width: 575px) {
   .section-space {
-    margin-top: 69vh;
+    margin-top: 43vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .section-space {
+    margin-top: 49vh;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .section-space {
+    margin-top: 49vh;
   }
 }
 
@@ -4164,6 +4174,41 @@ a:hover .instructor-card-two__social__icon {
   background-color: transparent;
 }
 /* MYCSSSSSSSS */
+@media (max-width: 768px) {
+  .main-header__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .main-header__logo img {
+      width: 70%; /* Adjust logo size on smaller screens */
+      margin-bottom: 10px;
+  }
+
+  .main-header__details h1 {
+      font-size: 1.5rem; /* Adjust font size for header text */
+      margin: 0;
+  }
+
+  .main-header__details p {
+      font-size: 0.9rem; /* Adjust font size for other details */
+  }
+
+  .main-header__nav {
+      display: none; /* Hide the nav menu by default on smaller screens */
+  }
+
+  .navbar-toggler {
+      display: block; /* Show the toggle button for mobile screens */
+  }
+
+  /* Show navigation when toggle is active */
+  .navbar-toggler[aria-expanded="true"] + .main-header__nav {
+      display: block;
+  }
+}
 /* Right-aligned header section */
 
 /*  */
@@ -4497,16 +4542,19 @@ a:hover .instructor-card-two__social__icon {
   align-items: center;
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 500px) {
   .main-menu .main-menu__list,
   .main-menu .main-menu__list ul {
     display: flex;
   }
+  .main-header{
+    margin-bottom: 5vh;
+  }
 }
 .main-menu .main-menu__list > li {
   position: relative;
-  padding-top: 47.5px;
-  padding-bottom: 47.5px;
+  padding-top: 27.5px;
+  padding-bottom: 27.5px;
 }
 .main-menu .main-menu__list > li.dropdown > a {
   position: relative;
@@ -4516,12 +4564,12 @@ a:hover .instructor-card-two__social__icon {
 }
 .main-menu .main-menu__list > li > a {
   position: relative;
-  font-size: 16px;
+  font-size: 19px;
   display: flex;
   align-items: center;
   color: var(--eduhive-black, #20104B);
   line-height: 1.25;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: capitalize;
   transition: all 500ms ease;
 }
@@ -4621,12 +4669,16 @@ a:hover .instructor-card-two__social__icon {
   display: none;
 }
 
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 900px) and (max-width: 1400px) {
   .main-menu__list li:nth-last-child(1) ul li > ul,
   .main-menu__list li:nth-last-child(2) ul li > ul {
     left: auto;
     right: calc(100% + 20px);
   }
+  .mobile-nav__toggler {
+    display: none; /* Hide hamburger icon */
+  }
+
 }
 /*--------------------------------------------------------------
 # Megamenu Popup
