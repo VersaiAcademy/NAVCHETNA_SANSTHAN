@@ -524,7 +524,7 @@ h6 {
 }
 
 .section-space {
-  margin-top: 43vh;
+  margin-top: 45vh;
 }
 @media (max-width: 767px) {
   .section-space {
@@ -16743,7 +16743,7 @@ h2 {
 .main-header {
   background-color: #f9f9f9;
   padding: 20px;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 }
 
 .main-header__inner {
