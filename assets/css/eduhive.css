@@ -12628,7 +12628,7 @@ margin-bottom: 3vh;
   position: relative;
   overflow: hidden;
   border-radius: 20px; /* Adjust border radius if needed for a rectangular shape */
-  margin: 10px; /* Adds spacing between items */
+  /*margin: 10px;*/ 
   width: 100%; /* Ensures the card takes full width within the carousel */
   aspect-ratio: 20 / 10; /* Creates a rectangular aspect ratio */
 }
