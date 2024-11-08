@@ -4678,6 +4678,10 @@ a:hover .instructor-card-two__social__icon {
   .mobile-nav__toggler {
     display: none; /* Hide hamburger icon */
   }
+  .mobile-nav__toggler.active span {
+    background-color: #ff5733; /* Example active color */
+    /* Additional styling for active state */
+}
 
 }
 /*--------------------------------------------------------------
@@ -12628,7 +12632,7 @@ margin-bottom: 3vh;
   position: relative;
   overflow: hidden;
   border-radius: 20px; /* Adjust border radius if needed for a rectangular shape */
-  /*margin: 10px;*/ 
+  margin: 10px; 
   width: 100%; /* Ensures the card takes full width within the carousel */
   aspect-ratio: 20 / 10; /* Creates a rectangular aspect ratio */
 }

@@ -324,13 +324,27 @@ setInterval(updateDateTime, 1000);
     e.preventDefault();
   });
 
-  if ($(".mobile-nav__toggler").length) {
-    $(".mobile-nav__toggler").on("click", function (e) {
-      e.preventDefault();
-      $(".mobile-nav__wrapper").toggleClass("expanded");
-      $("body").toggleClass("locked");
-    });
-  }
+// Check if the toggle button exists
+if ($(".mobile-nav__toggler").length) {
+  // Add event listener for the toggler button
+  $(".mobile-nav__toggler").on("click", function (e) {
+    e.preventDefault(); // Prevent default behavior
+
+    // Toggle the "expanded" class to show/hide the navigation menu
+    $(".mobile-nav__wrapper").toggleClass("expanded");
+    
+    // Lock or unlock the body scroll when the menu is open
+    $("body").toggleClass("locked");
+  });
+}
+// Close the menu when the close button is clicked
+$(".mobile-nav__close").on("click", function (e) {
+  e.preventDefault();
+  $(".mobile-nav__wrapper").removeClass("expanded");
+  $("body").removeClass("locked");
+});
+
+
 
   if ($(".search-toggler").length) {
     $(".search-toggler").on("click", function (e) {
