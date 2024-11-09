@@ -114,6 +114,16 @@
 }
 
 /* MYCSS */
+.mobile-nav__container .main-menu__list .dropdown.expanded .dropdown-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  position: relative; /* Ensure it appears in the right position */
+  background: #ffffff; /* Optional: Adjust background color if needed */
+  padding: 10px; /* Optional: Add padding for spacing */
+  border-radius: 5px; /* Optional: Add border radius if desired */
+  color: #333333; /* Optional: Adjust text color */
+}
 
 /* carousel */
 .news-carousel-container {
@@ -528,12 +538,12 @@ h6 {
 }
 @media (max-width: 767px) {
   .section-space {
-    margin-top: 45vh;
+    margin-top: 43vh;
   }
 }
 @media (max-width: 575px) {
   .section-space {
-    margin-top: 43vh;
+    margin-top: 42vh;
   }
 }
 @media (min-width: 700px) and (max-width: 1000px) {
@@ -5053,7 +5063,7 @@ body.megamenu-popup-active .mobile-nav__content {
   justify-content: space-between;
   font-family: var(--eduhive-font, "Plus Jakarta Sans", sans-serif);
   line-height: 30px;
-  color: var(--eduhive-white, #FFFFFF);
+  color: black;
   font-size: 15px;
   text-transform: capitalize;
   font-weight: 500;

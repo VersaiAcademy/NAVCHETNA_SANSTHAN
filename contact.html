@@ -468,7 +468,7 @@
           })
           .catch(error => console.error("Error loading footer:", error));
       
-          // Load and initialize header
+// Load and initialize header
 async function loadHeader() {
   try {
     const response = await fetch("header.html");
@@ -505,11 +505,40 @@ function initializeMobileNavEvents() {
         $("body").removeClass("locked");
       });
     }
+
+
+ // Dropdown functionality for mobile
+ if ($(".mobile-nav__container .main-menu__list").length) {
+      let dropdownAnchor = $(".mobile-nav__container .main-menu__list .dropdown > a");
+      dropdownAnchor.each(function () {
+        let self = $(this);
+        let toggleBtn = document.createElement("BUTTON");
+        toggleBtn.setAttribute("aria-label", "dropdown toggler");
+        toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
+        self.append(function () {
+          return toggleBtn;
+        });
+
+        self.find("button").on("click", function (e) {
+          e.preventDefault();
+          let self = $(this);
+          self.toggleClass("expanded");
+          self.parent().toggleClass("expanded");
+          self.parent().parent().children(".dropdown-menu").slideToggle();
+        });
+      });
+    }
+    if ($(".main-menu__list").length) {
+    // dynamic current class
+    let mainNavUL = $(".main-menu__list");
+    dynamicCurrentMenuClass(mainNavUL);
+  }
   });
 }
 
 // Load the header once the document is ready
 document.addEventListener("DOMContentLoaded", loadHeader);
+  as
   </script>
   </body>
 </html>
