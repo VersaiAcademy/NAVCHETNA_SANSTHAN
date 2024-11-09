@@ -745,7 +745,6 @@ h6 {
   position: relative;
   overflow: hidden;
   vertical-align: middle;
-  -webkit-appearance: none;
   border: none;
   outline: none !important;
   padding: 9px 9px 9px 15px;
@@ -9713,7 +9712,6 @@ li:hover .contact-page__info__icon__inner {
   font-family: "icomoon" !important;
   font-size: 16px;
   color: var(--eduhive-white, #FFFFFF);
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
