@@ -208,7 +208,7 @@
   display: inline-block; /* Ensures proper alignment */
 }
 
-.download-link .grid-button {
+.download-link {
   /* Ensure any additional styling applies as needed */
   width: 100%; /* If you need full-width buttons, adjust as needed */
   font-weight: bold; /* Make text bold */
