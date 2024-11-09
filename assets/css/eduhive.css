@@ -12611,7 +12611,7 @@ margin-bottom: 3vh;
 --------------------------------------------------------------*/
 .gallery-page {
   background-color: var(--eduhive-white, #FFFFFF);
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 .gallery-page .row {
   --bs-gutter-x: 60px;
