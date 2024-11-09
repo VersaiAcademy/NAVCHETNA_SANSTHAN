@@ -460,7 +460,51 @@ function initializeMobileNavEvents() {
 }
 
 // Load the header once the document is ready
-document.addEventListener("DOMContentLoaded", loadHeader);as
+document.addEventListener("DOMContentLoaded", loadHeader);
+  
+  // Function to load gallery images
+  function loadGallery() {
+    fetch('index-gallery.json')
+      .then(response => response.json())
+      .then(images => {
+        const carousel = document.querySelector('.gallery-page__carousel');
+        // Generate HTML for each image from the JSON data
+        images.forEach(image => {
+          const item = document.createElement('div');
+          item.classList.add('item');
+          const card = document.createElement('div');
+          card.classList.add('gallery-page__card');
+          const img = document.createElement('img');
+          img.src = image.src;
+          img.alt = image.alt;
+          card.appendChild(img);
+          item.appendChild(card);
+          carousel.appendChild(item);
+        });
+        // Initialize Owl Carousel after adding images
+        $(carousel).owlCarousel({
+          items: 1,
+          margin: 10,
+          loop: false,
+          smartSpeed: 700,
+          nav: true,
+          dots: false,
+          navText: [
+            '<span class="icon-arrow-left"></span>',
+            '<span class="icon-arrow-right"></span>'
+          ],
+          autoplay: true,
+          responsive: {
+            0: { items: 1, nav: true, dots: false, margin: 10 },
+            768: { items: 1, margin: 30 },
+            992: { items: 1, margin: 30 }
+          }
+        });
+      })
+      .catch(error => console.error('Error loading gallery:', error));
+  }
+  // Load gallery on page load
+  document.addEventListener('DOMContentLoaded', loadGallery);
   </script>
   </body>
 </html>
